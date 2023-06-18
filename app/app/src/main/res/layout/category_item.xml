@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="4dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:minHeight="@dimen/cat_card_rich_media_demo_min_height"
+    app:cardBackgroundColor="?attr/colorPrimaryVariant"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimaryVariant"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/cat_card_double_spacing"
+            android:paddingBottom="@dimen/cat_card_single_spacing"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/cat_card_single_spacing"
+                android:layout_weight="1.0"
+                android:background="?attr/colorPrimaryVariant"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/cat_card_single_spacing"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:id="@+id/category_name"
+                    style="?attr/textAppearanceHeadline5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/android:textColor" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="horizontal"
+            android:padding="@dimen/cat_card_single_spacing"
+            android:paddingHorizontal="@dimen/cat_card_single_spacing">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/category_delete_button"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/cat_card_single_spacing"
+                android:text="@string/delete"
+                android:textColor="?attr/android:textColor"
+                android:visibility="gone" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/category_modify_button"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/cat_card_single_spacing"
+                android:text="@string/rename"
+                android:textColor="?attr/android:textColor"
+                android:visibility="gone" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/category_pencil_button"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/cat_card_single_spacing"
+                android:contentDescription="@string/category_item_1"
+                android:text=""
+                app:icon="@drawable/ic_pen_24dp"
+                app:iconTint="?attr/android:textColor"
+                app:rippleColor="@android:color/transparent" />
+        </LinearLayout>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

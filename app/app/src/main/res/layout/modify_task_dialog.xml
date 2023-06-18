@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="?attr/dialogPreferredPadding"
+    android:paddingTop="?attr/dialogPreferredPadding"
+    android:paddingEnd="?attr/dialogPreferredPadding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout_add_task_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:hint="@string/modify_task_name"
+            android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/modify_task_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="?attr/colorPrimaryVariant"
+                tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout_modify_task_description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:hint="@string/add_task_description"
+            android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/modify_task_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="?attr/colorPrimaryVariant"
+                android:inputType="textMultiLine"
+                tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/priority_toggle_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+            app:checkedButton="@id/btn_white_priority"
+            app:selectionRequired="true"
+            app:singleSelection="true">
+
+            <Button
+                android:id="@+id/btn_white_priority"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/colorPrimaryVariant"
+                android:contentDescription="@string/task_dialog_priority_1"
+                app:icon="@drawable/ic_priority"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                app:iconSize="24dp"
+                app:iconTint="@color/white_priority" />
+
+            <Button
+                android:id="@+id/btn_yellow_priority"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/colorPrimaryVariant"
+                android:contentDescription="@string/task_dialog_priority_2"
+                app:icon="@drawable/ic_priority"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                app:iconSize="24dp"
+                app:iconTint="@color/yellow_priority" />
+
+            <Button
+                android:id="@+id/btn_orange_priority"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/colorPrimaryVariant"
+                android:contentDescription="@string/task_dialog_priority_3"
+                app:icon="@drawable/ic_priority"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                app:iconSize="24dp"
+                app:iconTint="@color/orange_priority" />
+
+            <Button
+                android:id="@+id/btn_red_priority"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/colorPrimaryVariant"
+                android:contentDescription="@string/task_dialog_priority_4"
+                app:icon="@drawable/ic_priority"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                app:iconSize="24dp"
+                app:iconTint="@color/red_priority" />
+
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.timewise.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <navigation
+        android:id="@+id/todo_graph"
+        app:startDestination="@id/navigation_todo">
+        <fragment
+            android:id="@+id/navigation_todo"
+            android:name="com.example.timewise.ui.todo.category.CategoryFragment"
+            android:label="@string/title_notifications"
+            tools:layout="@layout/fragment_todo">
+
+            <action
+                android:id="@+id/action_navigation_notifications_to_categoryFragment"
+                app:destination="@id/taskFragment" />
+            <action
+                android:id="@+id/action_navigation_todo_to_taskFullListFragment"
+                app:destination="@id/taskFullListFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/taskFullListFragment"
+            android:name="com.example.timewise.ui.todo.task.TaskFullListFragment"
+            tools:layout="@layout/fragment_task_full_list" />
+        <fragment
+            android:id="@+id/taskFragment"
+            android:name="com.example.timewise.ui.todo.task.TaskFragment"
+            tools:layout="@layout/fragment_task">
+            <argument
+                android:name="category"
+                app:argType="integer" />
+        </fragment>
+
+    </navigation>
+
+    <navigation
+        android:id="@+id/calendar_graph"
+        app:startDestination="@id/navigation_calendar">
+        <fragment
+            android:id="@+id/navigation_calendar"
+            android:name="com.example.timewise.ui.calendar.calendarhome.CalendarFragment"
+            android:label="@string/title_dashboard"
+            tools:layout="@layout/fragment_calendar">
+
+            <action
+                android:id="@+id/action_navigation_calendar_to_dayFragment"
+                app:destination="@id/dayFragment" />
+        </fragment>
+
+        <!-- Event add fragments navigation -->
+
+        <fragment
+            android:id="@+id/dayFragment"
+            android:name="com.example.timewise.ui.calendar.day.DayFragment">
+            <argument
+                android:name="selectedDate"
+                app:argType="java.time.LocalDate" />
+
+            <!-- Navigation to event add fragments -->
+            <action
+                android:id="@+id/action_navigation_day_to_BirthdayFragment"
+                app:destination="@id/addEventBirthdayFragment" />
+            <action
+                android:id="@+id/action_navigation_day_to_AppointmentFragment"
+                app:destination="@id/addEventAppointmentFragment" />
+            <action
+                android:id="@+id/action_navigation_day_to_DeadlineFragment"
+                app:destination="@id/addEventDeadlineFragment" />
+            <action
+                android:id="@+id/action_navigation_day_to_MeetingFragment"
+                app:destination="@id/addEventMeetingFragment" />
+            <action
+                android:id="@+id/action_navigation_day_to_TripFragment"
+                app:destination="@id/addEventTripFragment" />
+            <action
+                android:id="@+id/action_navigation_day_to_OtherFragment"
+                app:destination="@id/addEventOtherFragment" />
+
+            <!-- Navigation to event modify fragments -->
+            <action
+                android:id="@+id/action_navigation_day_to_ModifyBirthdayFragment"
+                app:destination="@id/modifyEventBirthdayFragment" />
+            <action
+                android:id="@+id/action_navigation_day_to_ModifyAppointmentFragment"
+                app:destination="@id/modifyEventAppointmentFragment" />
+            <action
+                android:id="@+id/action_navigation_day_to_ModifyDeadlineFragment"
+                app:destination="@id/modifyEventDeadlineFragment" />
+            <action
+                android:id="@+id/action_navigation_day_to_ModifyMeetingFragment"
+                app:destination="@id/modifyEventMeetingFragment" />
+            <action
+                android:id="@+id/action_navigation_day_to_ModifyTripFragment"
+                app:destination="@id/modifyEventTripFragment" />
+            <action
+                android:id="@+id/action_navigation_day_to_ModifyOtherFragment"
+                app:destination="@id/modifyEventOtherFragment" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/addEventBirthdayFragment"
+            android:name="com.example.timewise.ui.calendar.event.AddEventBirthdayFragment">
+            <argument
+                android:name="selectedDate"
+                app:argType="java.time.LocalDate" />
+
+            <action
+                android:id="@+id/action_addEventBirthdayFragment_to_dayFragment"
+                app:popUpTo="@id/dayFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/addEventAppointmentFragment"
+            android:name="com.example.timewise.ui.calendar.event.AddEventAppointmentFragment">
+            <argument
+                android:name="selectedDate"
+                app:argType="java.time.LocalDate" />
+
+            <action
+                android:id="@+id/action_addEventAppointmentFragment_to_dayFragment"
+                app:popUpTo="@id/dayFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/addEventDeadlineFragment"
+            android:name="com.example.timewise.ui.calendar.event.AddEventDeadlineFragment">
+            <argument
+                android:name="selectedDate"
+                app:argType="java.time.LocalDate" />
+
+            <action
+                android:id="@+id/action_addEventDeadlineFragment_to_dayFragment"
+                app:popUpTo="@id/dayFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/addEventMeetingFragment"
+            android:name="com.example.timewise.ui.calendar.event.AddEventMeetingFragment">
+            <argument
+                android:name="selectedDate"
+                app:argType="java.time.LocalDate" />
+
+            <action
+                android:id="@+id/action_addEventMeetingFragment_to_dayFragment"
+                app:popUpTo="@id/dayFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/addEventTripFragment"
+            android:name="com.example.timewise.ui.calendar.event.AddEventTripFragment">
+            <argument
+                android:name="selectedDate"
+                app:argType="java.time.LocalDate" />
+
+            <action
+                android:id="@+id/action_addEventTripFragment_to_dayFragment"
+                app:popUpTo="@id/dayFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/addEventOtherFragment"
+            android:name="com.example.timewise.ui.calendar.event.AddEventOtherFragment">
+            <argument
+                android:name="selectedDate"
+                app:argType="java.time.LocalDate" />
+
+            <action
+                android:id="@+id/action_addEventOtherFragment_to_dayFragment"
+                app:popUpTo="@id/dayFragment" />
+        </fragment>
+
+        <!-- Event modify fragments navigation -->
+
+        <fragment
+            android:id="@+id/modifyEventBirthdayFragment"
+            android:name="com.example.timewise.ui.calendar.event.ModifyEventBirthdayFragment">
+            <argument
+                android:name="selectedDate"
+                app:argType="java.time.LocalDate" />
+            <argument
+                android:name="event"
+                app:argType="integer" />
+
+            <action
+                android:id="@+id/action_modifyEventBirthdayFragment_to_dayFragment"
+                app:popUpTo="@id/dayFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/modifyEventAppointmentFragment"
+            android:name="com.example.timewise.ui.calendar.event.ModifyEventAppointmentFragment">
+            <argument
+                android:name="selectedDate"
+                app:argType="java.time.LocalDate" />
+            <argument
+                android:name="event"
+                app:argType="integer" />
+
+            <action
+                android:id="@+id/action_modifyEventAppointmentFragment_to_dayFragment"
+                app:popUpTo="@id/dayFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/modifyEventDeadlineFragment"
+            android:name="com.example.timewise.ui.calendar.event.ModifyEventDeadlineFragment">
+            <argument
+                android:name="selectedDate"
+                app:argType="java.time.LocalDate" />
+            <argument
+                android:name="event"
+                app:argType="integer" />
+
+            <action
+                android:id="@+id/action_modifyEventDeadlineFragment_to_dayFragment"
+                app:popUpTo="@id/dayFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/modifyEventMeetingFragment"
+            android:name="com.example.timewise.ui.calendar.event.ModifyEventMeetingFragment">
+            <argument
+                android:name="selectedDate"
+                app:argType="java.time.LocalDate" />
+            <argument
+                android:name="event"
+                app:argType="integer" />
+
+            <action
+                android:id="@+id/action_modifyEventMeetingFragment_to_dayFragment"
+                app:popUpTo="@id/dayFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/modifyEventTripFragment"
+            android:name="com.example.timewise.ui.calendar.event.ModifyEventTripFragment">
+            <argument
+                android:name="selectedDate"
+                app:argType="java.time.LocalDate" />
+            <argument
+                android:name="event"
+                app:argType="integer" />
+
+            <action
+                android:id="@+id/action_modifyEventTripFragment_to_dayFragment"
+                app:popUpTo="@id/dayFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/modifyEventOtherFragment"
+            android:name="com.example.timewise.ui.calendar.event.ModifyEventOtherFragment">
+            <argument
+                android:name="selectedDate"
+                app:argType="java.time.LocalDate" />
+            <argument
+                android:name="event"
+                app:argType="integer" />
+
+            <action
+                android:id="@+id/action_modifyEventOtherFragment_to_dayFragment"
+                app:popUpTo="@id/dayFragment" />
+        </fragment>
+    </navigation>
+</navigation>

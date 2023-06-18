@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Priority colors -->
+    <color name="white_priority">#D2FDA0</color>
+    <color name="yellow_priority">#F3FF05</color>
+    <color name="orange_priority">#FF8A05</color>
+    <color name="red_priority">#FF0000</color>
+
+    <!-- Theme colors -->
+    <color name="lime">#19FF8B</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#888</color>
+    <color name="icon_tint_color"> #000 </color>
+    <color name="gray_background">#878683</color>
+    <color name="red">#FF0000</color>
+    <color name="text">#000000</color>
+    <color name="theme_light">#DDE1E0  </color>
+    <color name="theme_green">#A1A0A0</color>
+    <color name="theme_hood">#059105</color>
+    <color name="theme_darkgreen">#059C05</color>
+    <color name="theme_category">#FCFDFD </color>
+    <color name="theme_bottom">#FFFFFF</color>
+    <color name="theme_night_color1">#383838</color>
+    <color name="theme_night_color2">#000000</color>
+    <color name="theme_night_color3">#040404</color>
+    <color name="theme_night_color4">#D63420</color>
+    <color name="theme_night_color5">#010101</color>
+    <color name="theme_night_color6">#092747</color>
+    <color name="theme_night_color7">#686767</color>
+
+    <!-- Event cards background colors -->
+    <color name="event_birthday_color">#CCFF85</color>
+    <color name="event_trip_color">#8BC34A</color>
+    <color name="event_meeting_color">#ABDC22</color>
+    <color name="event_appointment_color">#4CAF50</color>
+    <color name="event_deadline_color">#0C9F0C</color>
+    <color name="event_other_card_color">#014C01</color>
+</resources>

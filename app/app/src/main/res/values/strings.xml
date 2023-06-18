@@ -1,0 +1,138 @@
+<resources>
+    <string name="app_name">TimeWise</string>
+    <string name="title_home">TimeWise</string>
+    <string name="title_dashboard">Calendario</string>
+    <string name="title_notifications">To-Do</string>
+    <string name="add_category">Aggiungi sezione</string>
+    <string name="add_task">Aggiungi attività</string>
+    <string name="rename_category">Rinomina sezione</string>
+    <string name="modify_task">Modifica attività</string>
+    <string name="add_task_name">Attività</string>
+    <string name="add_task_description">Descrizione</string>
+    <string name="modify_task_name">Attività</string>
+    <string name="modify_task_description">Descrizione</string>
+    <string name="accept">Salva</string>
+    <string name="decline">Annulla</string>
+    <string name="delete">Elimina</string>
+    <string name="rename">Rinomina</string>
+    <string name="next">Avanti</string>
+    <string name="no_empty_element">Impossibile aggiungere un elemento vuoto</string>
+    <string name="no_empty_category_name">Non è consentito inserire un nome vuoto</string>
+    <string name="no_empty_task_name_description">Non è consentito inserire nome e descrizione vuota</string>
+    <string name="add_category_toast">Aggiunta categoria</string>
+    <string name="delete_category_toast">Eliminata sezione</string>
+    <string name="delete_task_toast">Eliminata attività</string>
+    <string name="delete_event_toast">Eliminato evento</string>
+    <string name="modify_category_toast">Modificata sezione</string>
+    <string name="modify_task_toast">Modificata attività</string>
+    <string name="date_departure_after_date_return">La data di partenza deve essere precedente a quella di ritorno</string>
+    <string name="date_start_after_date_end">La data di inizio deve essere precedente a quella di fine</string>
+
+    <string name="monday_short">LUN</string>
+    <string name="tuesday_short">MAR</string>
+    <string name="wednesday_short">MER</string>
+    <string name="thursday_short">GIO</string>
+    <string name="friday_short">VEN</string>
+    <string name="saturday_short">SAB</string>
+    <string name="sunday_short">DOM</string>
+
+    <string name="complete_all_fields">Completa tutti i campi obbligatori</string>
+    <string name="event_saved">Evento salvato</string>
+    <string name="button_list_activity">Lista attività</string>
+    <string name="event_type">"Tipo evento: "</string>
+
+    <string name="add_event_dialog_1">Compleanno</string>
+    <string name="add_event_dialog_2">Viaggio</string>
+    <string name="add_event_dialog_3">Riunione</string>
+    <string name="add_event_dialog_4">Appuntamento</string>
+    <string name="add_event_dialog_5">Scadenza</string>
+    <string name="add_event_dialog_6">Altro</string>
+
+    <string name="event_appointment_1">Appuntamento:</string>
+    <string name="event_appointment_2">Ora:</string>
+    <string name="event_appointment_3">Luogo:</string>
+    <string name="event_appointment_4">Note:</string>
+
+    <string name="event_birthday_img_1">Torta di compleanno</string>
+    <string name="event_birthday_1">Compleanno di:</string>
+    <string name="event_birthday_2">Note:</string>
+
+    <string name="event_deadline_1">Scadenza:</string>
+    <string name="event_deadline_2">Ora:</string>
+    <string name="event_deadline_3">Note:</string>
+
+    <string name="event_meeting_1">Riunione:</string>
+    <string name="event_meeting_2">Ora:</string>
+    <string name="event_meeting_3">Luogo:</string>
+    <string name="event_meeting_4">Note:</string>
+
+    <string name="event_other_1">Evento:</string>
+    <string name="event_other_2">Luogo:</string>
+    <string name="event_other_3">Note:</string>
+    <string name="event_other_4">Giorno singolo</string>
+    <string name="event_other_5">Più giorni</string>
+    <string name="event_other_6">Ora:</string>
+    <string name="event_other_7">Data di inizio:</string>
+    <string name="event_other_8">Data di fine:</string>
+    <string name="event_other_hint_1">7</string>
+    <string name="event_other_hint_2">8</string>
+
+    <string name="event_trip_1">Destinazione:</string>
+    <string name="event_trip_2">Data di partenza:</string>
+    <string name="event_trip_3">Data di arrivo:</string>
+    <string name="event_trip_4">Note:</string>
+
+    <string name="task_dialog_priority_1">1</string>
+    <string name="task_dialog_priority_2">2</string>
+    <string name="task_dialog_priority_3">3</string>
+    <string name="task_dialog_priority_4">4</string>
+
+    <string name="calendar_cell_1">1</string>
+
+    <string name="category_item_1">pen</string>
+
+    <string name="event_appointment_item_img_1">Appuntamento</string>
+    <string name="event_appointment_item_1">Ora</string>
+    <string name="event_appointment_item_2">Luogo</string>
+
+    <string name="event_birthday_item_img_1">Icona Birthday Cake</string>
+
+    <string name="event_deadline_item_img_1">Scadenza</string>
+    <string name="event_deadline_item_1">Ora</string>
+
+    <string name="event_meeting_item_img_1">Riunione</string>
+    <string name="event_meeting_item_1">Ora</string>
+    <string name="event_meeting_item_2">Luogo</string>
+
+    <string name="event_other_item_img_1">Altro</string>
+    <string name="event_other_item_1">Ora</string>
+    <string name="event_other_item_2">Data inizio</string>
+    <string name="event_other_item_3">Data fine</string>
+    <string name="event_other_item_4">Luogo</string>
+
+    <string name="event_trip_item_img_1">Viaggio</string>
+    <string name="event_trip_item_1">Destinazione</string>
+    <string name="event_trip_item_2">Data partenza</string>
+    <string name="event_trip_item_3">Data ritorno</string>
+
+    <string name="fragment_calendar_1">prev_month</string>
+    <string name="fragment_calendar_2">Feb 2021</string>
+    <string name="fragment_calendar_3">next_month</string>
+
+    <string name="fragment_day_1">Add a new event</string>
+
+    <string name="fragment_home_1">To-Do:</string>
+    <string name="fragment_home_2">Eventi del giorno:</string>
+
+    <string name="fragment_task_1">Add a new task</string>
+
+    <string name="fragment_task_query_hint_1">Cerca attività</string>
+    <string name="fragment_task_full_list_1">Lista attività</string>
+
+    <string name="fragment_todo_1">Add a new category</string>
+
+    <string name="fragment_todo_query_hint_1">Cerca categorie</string>
+
+    <string name="task_item_img_1">Priorità</string>
+    <string name="add_task_toast">Aggiuntà attività</string>
+</resources>

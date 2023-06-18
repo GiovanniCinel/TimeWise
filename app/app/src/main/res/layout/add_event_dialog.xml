@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="?attr/dialogPreferredPadding"
+    android:paddingTop="?attr/dialogPreferredPadding"
+    android:paddingEnd="?attr/dialogPreferredPadding">
+
+    <RadioGroup
+        android:id="@+id/add_event_type_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/add_event_dialog_1" />
+
+        <RadioButton
+            android:id="@+id/trip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_event_dialog_2" />
+
+        <RadioButton
+            android:id="@+id/meeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_event_dialog_3" />
+
+        <RadioButton
+            android:id="@+id/appointment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_event_dialog_4" />
+
+        <RadioButton
+            android:id="@+id/deadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_event_dialog_5" />
+
+        <RadioButton
+            android:id="@+id/other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_event_dialog_6" />
+    </RadioGroup>
+</ScrollView>
