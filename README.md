@@ -1,10 +1,10 @@
 # TimeWise
-Progetto per l'esame di "Programmazione di Sistemi Embedded" [9 CFU] per l'anno accademico 2022/2023.
+Project for the "Embedded Systems Programming" exam [9 CFU] for the academic year 2022/2023.
 
-## Progetto
+## Project
 Let an AI Do the Work.
 
-## Autori
+## Authors:
 * Giovanni Cinel
 * Gianluca Nordio
 * Federico Pivotto
